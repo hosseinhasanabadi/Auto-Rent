@@ -6,7 +6,11 @@ function Header() {
   return (
     <header
       className="min-h-screen relative overflow-hidden bg-center bg-cover flex flex-col"
-      style={{ backgroundImage: "url('/headerbg.png')" }}
+      style={{
+        backgroundImage: "url('/headerbg.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
         <h1 className="text-amber-300 text-3xl sm:text-4xl md:text-5xl leading-relaxed">
