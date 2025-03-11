@@ -1,0 +1,57 @@
+{
+    "commentData": [
+    {
+      "name": "Donald Jackman",
+      "title": "Marketing Manager",
+      "image": "/assets/profile_img_1.png",
+      "alt": "Portrait of Donald Jackman",
+      "rating": 5,
+      "text": "کیفیت عالی"
+    },
+    {
+      "name": "Richard Nelson",
+      "title": "UI/UX Designer",
+      "image": "/assets/profile_img_2.png",
+      "alt": "Portrait of Richard Nelson",
+      "rating": 4,
+      "text": "تحویل ب موقع "
+    },
+    {
+      "name": "James Washington",
+      "title": "Co-Founder",
+      "image": "/assets/profile_img_3.png",
+      "alt": "Portrait of James Washington",
+      "rating": 5,
+      "text": "پشتیبانی بی نظیر"
+    }
+  
+  ],
+  "carData":[
+    {
+        "title":"کوپه",
+        "image":"/assetes/copeh.png"
+
+    },
+    {
+        "title":"سدان",
+        "image":"/assetes/sedan.png"
+
+    },
+    {
+        "title":"کروک",
+        "image":"/assetes/crok.png"
+
+    },
+    {
+        "title":"شاسی بلند",
+        "image":"/assetes/shasi.png"
+
+    },
+    {
+        "title":"اسپرت",
+        "image":"/assetes/esport.png"
+
+    }
+
+  ]
+}
