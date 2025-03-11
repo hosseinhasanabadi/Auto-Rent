@@ -29,27 +29,27 @@
   "carData":[
     {
         "title":"کوپه",
-        "image":"/assetes/copeh.png"
+        "image":"/assets/copeh.png"
 
     },
     {
         "title":"سدان",
-        "image":"/assetes/sedan.png"
+        "image":"/assets/sedan.png"
 
     },
     {
         "title":"کروک",
-        "image":"/assetes/crok.png"
+        "image":"/assets/crok.png"
 
     },
     {
         "title":"شاسی بلند",
-        "image":"/assetes/shasi.png"
+        "image":"/assets/shasi.png"
 
     },
     {
         "title":"اسپرت",
-        "image":"/assetes/esport.png"
+        "image":"/assets/esport.png"
 
     }
 
