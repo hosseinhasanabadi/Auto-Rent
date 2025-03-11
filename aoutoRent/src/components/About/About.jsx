@@ -1,12 +1,14 @@
 import React from "react";
+import Car from "../Car/Car";
 
 function About() {
   return (
+    
     <section className="w-full flex justify-center py-10">
       <div
         className="w-3/4 bg-center rounded-2xl p-8 bg-cover bg-no-repeat relative flex flex-col items-center"
         style={{ backgroundImage: "url('/About.png')", maxHeight: "500px " ,backgroundSize: "cover", backgroundPosition: "center" }}
-      >
+        >
         <div className="text-center">
           <h1 className="font-bold text-amber-300 text-2xl">چــــــرا اُتو رِنت؟</h1>
           <p className="text-white mx-auto max-w-2xl">
@@ -18,7 +20,7 @@ function About() {
           </p>
         </div>
 
-        <div className="relative mt-10 w-full flex sm:-bottom-5 md:-bottom-24  justify-center">
+        <div className=" hidden relative mt-10 w-full md:flex sm:-bottom-5 md:-bottom-24  justify-center">
           <div className="flex flex-wrap gap-6 justify-center items-center w-full max-w-3xl">
             <div className="w-full sm:w-60 border rounded-2xl bg-white shadow text-center p-4">
               <img src="/icon.png" className="mx-auto w-12 h-12" alt="تحویل در محل" />
@@ -47,6 +49,7 @@ function About() {
         </div>
       </div>
     </section>
+        
   );
 }
 
