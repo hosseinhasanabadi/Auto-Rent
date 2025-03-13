@@ -1,15 +1,27 @@
 import React, { useEffect, useState } from "react";
 import commentData from "../../../db.json";
 import { data } from "react-router";
+import useFetchData from "../../Api/useFetch";
 function Comment() {
-  const [comment, setComment] = useState([]);
+  //روش اول
+  // const [comment, setComment] = useState([]);
+  // useEffect(() => {
+  //   fetch("http://localhost:5000/commentData")
+  //     .then((response) => response.json())
+  //     .then((data) => setComment(data))
+  //     .catch((error) => console.error("Error fetching data:", error));
+  // }, []);
 
-  useEffect(() => {
-    fetch("http://localhost:5000/commentData")
-      .then((response) => response.json())
-      .then((data) => setComment(data))
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
+  //روش 2
+
+  const {
+    data: comment,
+    loading,
+    error,
+  } = useFetchData("http://localhost:5000/commentData");
+  if (loading)
+    return <p className="text-center text-blue-500">در حال بارگذاری...</p>;
+  if (error) return <p className="text-center text-red-500">خطا: {error}</p>;
   return (
     <section
       className="container mx-auto py-10 lg:px-32 w-full 
@@ -41,19 +53,13 @@ function Comment() {
             <h3 className="text-lg font-semibold">{comment.name}</h3>
             <p className="text-gray-600 text-sm">{comment.title}</p>
             <p className="text-gray-800 mt-2">{comment.text}</p>
-          <di className='flex justify-center mt-3'>
-            {
-
-              Array(comment.rating).fill("⭐").map((
-                star,i
-              )=>(
-                <span key={i}>{star}</span>
-              ))
-
-
-            }
-
-          </di>
+            <di className="flex justify-center mt-3">
+              {Array(comment.rating)
+                .fill("⭐")
+                .map((star, i) => (
+                  <span key={i}>{star}</span>
+                ))}
+            </di>
           </div>
         ))}
       </div>
