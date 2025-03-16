@@ -9,9 +9,9 @@ function Home() {
   return (
     <div>
       <Header />
-      <About/>
-      <Car/>
-      <Comment/>
+      <About />
+      <Car />
+      <Comment />
     </div>
   );
 }

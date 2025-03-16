@@ -66,7 +66,7 @@ function Navbar() {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent"
+                className="block py-2 px-3 text-gray-400 rounded-sm md:bg-transparent md:p-0"
               >
                 خدمات ما
               </a>
@@ -74,7 +74,7 @@ function Navbar() {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent"
+                className="block py-2 px-3 text-gray-400 rounded-sm md:bg-transparent md:p-0"
               >
                 بلاگ
               </a>
@@ -82,7 +82,7 @@ function Navbar() {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent"
+                className="block py-2 px-3 text-gray-400 rounded-sm md:bg-transparent md:p-0"
               >
                 تماس با ما
               </a>
